@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,43 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Herbal theme colors
+				sage: {
+					50: '#f7f8f4',
+					100: '#eef0e6',
+					200: '#dde2ce',
+					300: '#c6cead',
+					400: '#aab689',
+					500: '#92a06f',
+					600: '#7a8659',
+					700: '#626a48',
+					800: '#50553c',
+					900: '#434834'
+				},
+				forest: {
+					50: '#f3f6f1',
+					100: '#e4ebe0',
+					200: '#cbd7c2',
+					300: '#a8bb9b',
+					400: '#839871',
+					500: '#657c53',
+					600: '#4e6340',
+					700: '#3e4f34',
+					800: '#34402b',
+					900: '#2c3625'
+				},
+				earth: {
+					50: '#faf9f6',
+					100: '#f5f1ea',
+					200: '#ebe3d2',
+					300: '#dccfb4',
+					400: '#cab591',
+					500: '#b89d74',
+					600: '#a68762',
+					700: '#8b7053',
+					800: '#705c47',
+					900: '#5c4b3a'
 				}
 			},
 			borderRadius: {
@@ -84,11 +122,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in': {
+					'0%': {
+						transform: 'translateX(-100%)'
+					},
+					'100%': {
+						transform: 'translateX(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'slide-in': 'slide-in 0.3s ease-out'
+			},
+			backgroundImage: {
+				'herbal-gradient': 'linear-gradient(135deg, #f7f8f4 0%, #e4ebe0 50%, #cbd7c2 100%)',
+				'earth-gradient': 'linear-gradient(135deg, #faf9f6 0%, #f5f1ea 50%, #ebe3d2 100%)'
 			}
 		}
 	},
